@@ -10,11 +10,11 @@ int main() {
     int d1, d2, d3;
     int min_digit;
 
-    cout << "Ââåä³òü òğèçíà÷íå ÷èñëî: ";
+    cout << "Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ Ã²Ã°Ã¨Ã§Ã­Ã Ã·Ã­Ã¥ Ã·Ã¨Ã±Ã«Ã®:  ";
     cin >> number;
 
     if (number < 100 || number > 999) {
-        cout << "Ïîìèëêà! ×èñëî íå òğèçíà÷íå." << endl;
+        cout << "ÃÃ®Ã¬Ã¨Ã«ÃªÃ ! Ã—Ã¨Ã±Ã«Ã® Ã­Ã¥ Ã²Ã°Ã¨Ã§Ã­Ã Ã·Ã­Ã¥." << endl;
         return 1;
     }
 
@@ -30,30 +30,30 @@ int main() {
         min_digit = d3;
     }
 
-    cout << "Íàéìåíøà öèôğà: " << min_digit << endl;
-    cout << "Íàçâà: ";
+    cout << "ÃÃ Ã©Ã¬Ã¥Ã­Ã¸Ã  Ã¶Ã¨Ã´Ã°Ã : " << min_digit << endl;
+    cout << "ÃÃ Ã§Ã¢Ã : ";
 
     switch (min_digit) {
-    case 0: cout << "Íóëü"; break;
-    case 1: cout << "Îäèí"; break;
-    case 2: cout << "Äâà"; break;
-    case 3: cout << "Òğè"; break;
-    case 4: cout << "×îòèğè"; break;
-    case 5: cout << "Ï'ÿòü"; break;
-    case 6: cout << "Ø³ñòü"; break;
-    case 7: cout << "Ñ³ì"; break;
-    case 8: cout << "Â³ñ³ì"; break;
-    case 9: cout << "Äåâ'ÿòü"; break;
-    default: cout << "Ïîìèëêà"; break;
+    case 0: cout << "ÃÃ³Ã«Ã¼"; break;
+    case 1: cout << "ÃÃ¤Ã¨Ã­"; break;
+    case 2: cout << "Ã„Ã¢Ã "; break;
+    case 3: cout << "Ã’Ã°Ã¨"; break;
+    case 4: cout << "Ã—Ã®Ã²Ã¨Ã°Ã¨"; break;
+    case 5: cout << "Ã'Ã¿Ã²Ã¼"; break;
+    case 6: cout << "Ã˜Â³Ã±Ã²Ã¼"; break;
+    case 7: cout << "Ã‘Â³Ã¬"; break;
+    case 8: cout << "Ã‚Â³Ã±Â³Ã¬"; break;
+    case 9: cout << "Ã„Ã¥Ã¢'Ã¿Ã²Ã¼"; break;
+    default: cout << "ÃÃ®Ã¬Ã¨Ã«ÃªÃ "; break;
     }
 
     cout << endl;
 
     if (min_digit % 2 == 0) {
-        cout << "Ïàğíà" << endl;
+        cout << "ÃÃ Ã°Ã­Ã " << endl;
     }
     else {
-        cout << "Íåïàğíà" << endl;
+        cout << "ÃÃ¥Ã¯Ã Ã°Ã­Ã " << endl;
     }
 
     return 0;

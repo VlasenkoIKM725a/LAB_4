@@ -1,17 +1,20 @@
 #include <iostream>
+#include <clocale>
 
 using namespace std;
 
 int main() {
+    setlocale(LC_CTYPE, "ukr");
+
     int number;
     int d1, d2, d3;
     int min_digit;
 
-    cout << "Enter 3-digit num: ";
+    cout << "Введіть тризначне число: ";
     cin >> number;
 
     if (number < 100 || number > 999) {
-        cout << "Error!" << endl;
+        cout << "Помилка! Число не тризначне." << endl;
         return 1;
     }
 
@@ -27,30 +30,30 @@ int main() {
         min_digit = d3;
     }
 
-    cout << "Min: " << min_digit << endl;
-    cout << "Name: ";
+    cout << "Найменша цифра: " << min_digit << endl;
+    cout << "Назва: ";
 
     switch (min_digit) {
-    case 0: cout << "Zero"; break;
-    case 1: cout << "One"; break;
-    case 2: cout << "Two"; break;
-    case 3: cout << "Three"; break;
-    case 4: cout << "Four"; break;
-    case 5: cout << "Five"; break;
-    case 6: cout << "Six"; break;
-    case 7: cout << "Seven"; break;
-    case 8: cout << "Eight"; break;
-    case 9: cout << "Nine"; break;
-    default: cout << "Error"; break;
+    case 0: cout << "Нуль"; break;
+    case 1: cout << "Один"; break;
+    case 2: cout << "Два"; break;
+    case 3: cout << "Три"; break;
+    case 4: cout << "Чотири"; break;
+    case 5: cout << "П'ять"; break;
+    case 6: cout << "Шість"; break;
+    case 7: cout << "Сім"; break;
+    case 8: cout << "Вісім"; break;
+    case 9: cout << "Дев'ять"; break;
+    default: cout << "Помилка"; break;
     }
 
     cout << endl;
 
     if (min_digit % 2 == 0) {
-        cout << "Even" << endl;
+        cout << "Парна" << endl;
     }
     else {
-        cout << "Odd" << endl;
+        cout << "Непарна" << endl;
     }
 
     return 0;

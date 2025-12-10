@@ -10,11 +10,11 @@ int main() {
     int d1, d2, d3;
     int min_digit;
 
-    cout << "Ââåä³òü òðèçíà÷íå ÷èñëî:  ";
+    cout << "Введіть тризначне число: ";
     cin >> number;
 
     if (number < 100 || number > 999) {
-        cout << "Ïîìèëêà! ×èñëî íå òðèçíà÷íå." << endl;
+        cout << "Помилка! Число не тризначне." << endl;
         return 1;
     }
 
@@ -30,30 +30,30 @@ int main() {
         min_digit = d3;
     }
 
-    cout << "Íàéìåíøà öèôðà: " << min_digit << endl;
-    cout << "Íàçâà: ";
+    cout << "Найменша цифра: " << min_digit << endl;
+    cout << "Назва: ";
 
     switch (min_digit) {
-    case 0: cout << "Íóëü"; break;
-    case 1: cout << "Îäèí"; break;
-    case 2: cout << "Äâà"; break;
-    case 3: cout << "Òðè"; break;
-    case 4: cout << "×îòèðè"; break;
-    case 5: cout << "Ï'ÿòü"; break;
-    case 6: cout << "Ø³ñòü"; break;
-    case 7: cout << "Ñ³ì"; break;
-    case 8: cout << "Â³ñ³ì"; break;
-    case 9: cout << "Äåâ'ÿòü"; break;
-    default: cout << "Ïîìèëêà"; break;
+    case 0: cout << "Нуль"; break;
+    case 1: cout << "Один"; break;
+    case 2: cout << "Два"; break;
+    case 3: cout << "Три"; break;
+    case 4: cout << "Чотири"; break;
+    case 5: cout << "П'ять"; break;
+    case 6: cout << "Шість"; break;
+    case 7: cout << "Сім"; break;
+    case 8: cout << "Вісім"; break;
+    case 9: cout << "Дев'ять"; break;
+    default: cout << "Помилка"; break;
     }
 
     cout << endl;
 
     if (min_digit % 2 == 0) {
-        cout << "Ïàðíà" << endl;
+        cout << "Парна" << endl;
     }
     else {
-        cout << "Íåïàðíà" << endl;
+        cout << "Непарна" << endl;
     }
 
     return 0;

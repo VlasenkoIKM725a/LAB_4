@@ -10,11 +10,11 @@ int main() {
     int d1, d2, d3;
     int min_digit;
 
-    cout << "Ğ’Ğ²ĞµĞ´Ñ–Ñ‚ÑŒ Ñ‚Ñ€Ğ¸Ğ·Ğ½Ğ°Ñ‡Ğ½Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾: ";
+    cout << "Ââåäiòü òğèçíà÷íå ÷èñëî: ";
     cin >> number;
 
     if (number < 100 || number > 999) {
-        cout << "ĞŸĞ¾Ğ¼Ğ¸Ğ»ĞºĞ°! Ğ§Ğ¸ÑĞ»Ğ¾ Ğ½Ğµ Ñ‚Ñ€Ğ¸Ğ·Ğ½Ğ°Ñ‡Ğ½Ğµ." << endl;
+        cout << "Ïîìèëêà! ×èñëî íå òğèçíà÷íå." << endl;
         return 1;
     }
 
@@ -30,30 +30,30 @@ int main() {
         min_digit = d3;
     }
 
-    cout << "ĞĞ°Ğ¹Ğ¼ĞµĞ½ÑˆĞ° Ñ†Ğ¸Ñ„Ñ€Ğ°: " << min_digit << endl;
-    cout << "ĞĞ°Ğ·Ğ²Ğ°: ";
+    cout << "Íàéìåíøà öèôğà: " << min_digit << endl;
+    cout << "Íàçâà: ";
 
     switch (min_digit) {
-    case 0: cout << "ĞÑƒĞ»ÑŒ"; break;
-    case 1: cout << "ĞĞ´Ğ¸Ğ½"; break;
-    case 2: cout << "Ğ”Ğ²Ğ°"; break;
-    case 3: cout << "Ğ¢Ñ€Ğ¸"; break;
-    case 4: cout << "Ğ§Ğ¾Ñ‚Ğ¸Ñ€Ğ¸"; break;
-    case 5: cout << "ĞŸ'ÑÑ‚ÑŒ"; break;
-    case 6: cout << "Ğ¨Ñ–ÑÑ‚ÑŒ"; break;
-    case 7: cout << "Ğ¡Ñ–Ğ¼"; break;
-    case 8: cout << "Ğ’Ñ–ÑÑ–Ğ¼"; break;
-    case 9: cout << "Ğ”ĞµĞ²'ÑÑ‚ÑŒ"; break;
-    default: cout << "ĞŸĞ¾Ğ¼Ğ¸Ğ»ĞºĞ°"; break;
+    case 0: cout << "Íóëü"; break;
+    case 1: cout << "Îäèí"; break;
+    case 2: cout << "Äâà"; break;
+    case 3: cout << "Òğè"; break;
+    case 4: cout << "×îòèğè"; break;
+    case 5: cout << "Ï'ÿòü"; break;
+    case 6: cout << "Ø³ñòü"; break;
+    case 7: cout << "Ñ³ì"; break;
+    case 8: cout << "Â³ñ³ì"; break;
+    case 9: cout << "Äåâ'ÿòü"; break;
+    default: cout << "Ïîìèëêà"; break;
     }
 
     cout << endl;
 
     if (min_digit % 2 == 0) {
-        cout << "ĞŸĞ°Ñ€Ğ½Ğ°" << endl;
+        cout << "Ïàğíà" << endl;
     }
     else {
-        cout << "ĞĞµĞ¿Ğ°Ñ€Ğ½Ğ°" << endl;
+        cout << "Íåïàğíà" << endl;
     }
 
     return 0;
